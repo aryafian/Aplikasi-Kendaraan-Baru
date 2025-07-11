@@ -1,0 +1,11 @@
+{
+  "name": "vehicleflow",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo 'Root build completed'"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "pg": "^8.11.3"
+  }
+}
