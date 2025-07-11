@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: vehicleflow
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/auth/me
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: vehicleflow-db
+          property: connectionString
+
+databases:
+  - name: vehicleflow-db
+    databaseName: vehicleflow
+    user: vehicleflow_user
+    plan: free
