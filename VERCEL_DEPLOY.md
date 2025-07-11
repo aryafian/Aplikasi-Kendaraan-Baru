@@ -59,7 +59,7 @@ git push origin main
 ```
 
 **⚠️ Error sudah diperbaiki:**
-- ✅ Runtime version `@vercel/node@3.1.6` yang valid
+- ✅ Runtime format `"@vercel/node"` yang benar (tanpa version number)
 - ✅ Semua API functions menggunakan CommonJS (bukan ES modules)
 - ✅ Struktur build dan output directories yang benar
 

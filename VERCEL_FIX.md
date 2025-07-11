@@ -5,7 +5,7 @@
 ### ❌ Error: "Function Runtimes must have a valid version"
 
 **Solusi:**
-1. ✅ Update `vercel.json` dengan runtime version yang valid: `@vercel/node@3.1.6`
+1. ✅ Update `vercel.json` dengan runtime format yang benar: `"@vercel/node"` (tanpa version number)
 2. ✅ Ubah dari ES modules ke CommonJS untuk kompatibilitas Vercel
 3. ✅ Perbaiki struktur build commands dan output directories
 
@@ -116,7 +116,7 @@ Setelah berhasil deploy, aplikasi akan tersedia di:
 ## ⚠️ Catatan Penting:
 
 1. **CommonJS Format**: Semua API functions sudah diubah ke CommonJS untuk kompatibilitas Vercel
-2. **Runtime Version**: Menggunakan `@vercel/node@3.1.6` yang stabil
+2. **Runtime Format**: Menggunakan `"@vercel/node"` format yang benar (tanpa version number)
 3. **Database SSL**: Connection string harus include `?sslmode=require`
 4. **CORS Headers**: Sudah ditambahkan ke semua endpoints untuk frontend access
 
